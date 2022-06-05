@@ -15,12 +15,24 @@ namespace EjemploHerenciaPersonaAlumno
             //acá estoy asignando valores desde afuera, totalmente contra las reglas 
             //del encapsulamiento, pero no sé aún cómo hacerlo de otra manera. 
 
-            Alumno alu2 = new Alumno("Loisea", "Julieta", 52563254);
+            Alumno alu2 = new Alumno("Loiseau", "Julieta", 52563254);
             alu2.legajo = 555;
             alu2.examen = new Examen("Termodinámica 1", TipoExamen.PARCIAL, 10);
-                
+
+            //Guardo al alumno 3 en la Rama1 únicamente
+            Alumno alu3 = new Alumno("Eljatib", "Denise", 35625415);
+            alu3.legajo = 456;
+            alu3.examen = new Examen("Termodinámica 2", TipoExamen.PARCIAL, 10);
+            
             Console.WriteLine(alu1.retornarDatos());
             Console.WriteLine(alu2.retornarDatos());
+            Console.WriteLine(alu3.retornarDatos());
+            
+             
+
+
+
+
         }
     }
 }

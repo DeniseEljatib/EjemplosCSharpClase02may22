@@ -23,8 +23,7 @@ namespace EjemploHerenciaPersonaAlumno
         //sobreescritura de un método en una clase derivada:
         public new String retornarDatos()
         {
-            return "El alumno "+ base.retornarDatos() + $" legajo {legajo} Materia {examen.materia} " +
-                $"Examen { examen.tipo} Nota {examen.nota} ";
+            return "El alumno " + base.retornarDatos() + $" legajo {legajo} Materia {examen.materia} Examen {examen.tipo} Nota {examen.nota} ";
         }
 
     }
